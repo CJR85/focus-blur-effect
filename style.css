@@ -20,6 +20,7 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 section .box {
@@ -49,7 +50,7 @@ section .box h2 {
   position: absolute;
   color: #fff;
   font-size: 10em;
-  transform: translate(0, 0);
+  transform: translate(calc(var(--x) / 25), calc(var(--y) / 25));
 }
 
 .circle {
